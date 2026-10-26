@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #f3f4f6;
+   color: #1f2937;
+   line-height: 1.6;
+}
+a{
+    text-decoration: none;
+    
+}
+.navbar{
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.nav-links a{
+    color: white;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+
+}
+.nav-links a:hover{
+    color: #38bdf8;
+}
+.hero{
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg,#1f2937,#0f766e);
+    color: white;
+
+}
+.hero h1{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.hero p{
+    font-size: 20px;
+    margin-bottom: 25px;
+
+}
+.hero-btn{
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #1f2937;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+
+}
+.hero-btn:hover{
+    transform: translateY(-2px);
+}
+.staff-section{
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+}
+.staff-section h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.section-description{
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 35px;
+}
+.staff-directory{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.staff-card{
+    flex: 1 1 200px;
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0,0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.staff-card:hover{
+    transform: translateY(-5px);
+}
+.staff-card img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+
+}
+.staff-card h3{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.staff-card p{
+    color: #0f766e;
+    font-weight: bold;
+}
+.register-section{
+    padding: 60px 20px;
+    background-color: #e5e7eb;
+}
+.booking-form{
+    max-width: 800px;
+    margin: auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0 0 0 0.1);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.booking-form h2{
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+.form-group label{
+    font-weight: bold;
+}
+.form-group input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.form-group input:focus{
+    border-color: #0f766e;
+    box-shadow: 0 0 5px rgba(15,118,110, 0.4);
+}
+.submit-btn{
+    grid-column: span 2;
+    padding: 14px;
+    background-color: #0f766e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease ,background-color 0.3s ease;
+}
+footer{
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+.footer-content h3{
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin: 20px 0;
+}
+.footer-links a{
+    color: white;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover{
+    color: #38bdf8;
+}
+.copyright{
+    color:#d1d5db;
+    font-size: 14px;
+    margin-top: 15px;
+}
+@media(max-width:992px){
+    .navbar{
+        padding: 20px 4%;
+
+    }
+    .staff-section{
+        margin: 40px auto;
+    }
+    .booking-form{
+        max-width:90%;
+    }
+}
+@media(max-width:768px){
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .hero h1{
+        font-size: 30px;
+    }
+    .staff-directory{
+        flex-direction: column;
+    }
+    .staff-card{
+        width: 100%;
+        flex: 1 1 auto;
+    }
+    .booking-form{
+        grid-template-columns: 1fr;
+        padding: 22px;
+        max-width: 100%;
+    }
+    .booking-form h2,
+    .submit-btn{
+        grid-column: span;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
